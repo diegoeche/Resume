@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath} \usepackage{amssymb} \usepackage{url} \textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1} #2 \end{verse}
+} \newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt}
+    \textsc{#1}} \vspace*{-6pt} \lineunder} \newcommand{\employer}[3]{{
+    \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\ }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\ #2 \lineunder #3
+\end{center}
+\vspace*{-8pt} }
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep
+      -2pt}}{\vspace*{4pt}\end{list}} \newcommand{\schoolwithcourses}[4]{
+  \textbf{#1} #2 $\bullet$ #3\\ #4 $\bullet$ Selected Coursework:\\
+\vspace*{5pt} } \newcommand{\school}[4]{ \textbf{#1} #2 $\bullet$ #3\\ #4
+  \\ }
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Diego Echeverri Saldarriaga} { Address: Cra 20 \#22 sur 30 Interior 127
+  Phone: (+36) 30 3377326} { $\bullet$ diego.echeverri@intellifactory.com $\bullet$
+  diegoeche@gmail.com, }
+
+\header{Work History}
+\employer{Intellifactory Kft. (Budapest, Hungary)}{March 2008-Current}{F\# Developer}
+\begin{achievements}
+\item Development of different sub modules and helper libraries for a Marketing
+  automation tool using F\#\footnote{This was presented in CUFP 2009 as: ``The
+    First Substantial Line of Business Application in F\#''}.
+\item Currently working on a web framework called WebSharper. It's based on F\#
+  to JavaScript translation. I added support for functions in the standard library
+  and some popular libraries like JQuery, Google Maps, YUI and the HTML5 canvas
+  element. Created the benchmarking and testing suites. The former using random
+  testing inspired by QuickCheck.
+\end{achievements}
+
+\employer{Universidad EAFIT (Medell\'in, Colombia) \\ Distributed Systems
+  Laboratory}{February 2007-December 2007}{Half-time Research Assistant}
+\begin{achievements}
+\item Design and development of multiobjective optimization
+  algorithms based on SPEA2 and NSGAII for a Multicast Overlay
+  Network. Using a Java framework called JMetal.
+\item Mathematical Definition of the Problem. Statistical analysis of
+  experimental data using $R$.
+\end{achievements}
+
+\employer{Virtual Reality Laboratory}{September
+  2004-December 2004}{Half-time Research Assistant}
+\begin{achievements}
+\item Improved the Telepresence Project, a collaborative tool for distance
+  education. Using Java and Java3D
+\end{achievements}
+
+\header{Education}
+
+\schoolwithcourses{Universidad EAFIT}{Medell\'in, Colombia}{Ingenier\'ia de Sistemas
+  (Comp. Sci.) 2002-2008} {Current Cumulative (GPA): 4.2/5} \area{Comp. Sci.:}{
+  Computer Graphics $\cdot$ Distributed Virtual Reality $\cdot$ Programming Languages
+  $\cdot$ Data Structures and Algorithms $\cdot$ Automata \& Computation $\cdot$
+  Functional and Logical Programming $\cdot$ Databases $\cdot$ Operating Systems
+  $\cdot$ Computer Architecture $\cdot$ Compilers $\cdot$ Distributed Systems}
+\area{Mathematics:}{Multivariable Calculus $\cdot$ Linear Algebra $\cdot$ Discrete
+  Math $\cdot$ Physics $\cdot$ Statistics $\cdot$ Differential Equations $\cdot$
+  Operations Research}
+
+
+\header{Teaching Assistantships}
+\begin{achievements}
+\item Computer Architecture
+\item Database Systems
+\item Discrete Mathematics
+\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item Proficient in software development using F\#, C\#, Java (J2SE) and JavaScript.
+\item Proficient in Web Development using .Net
+\item Familiar with GNU/Linux
+\item Familiar with MS Windows and .Net
+\item Familiar with Haskell and $R$.
+\item Familiar with technologies such as SQL Server, ASP, 
+ Eclipse, SVN, Git and Visual Studio
+\end{achievements}
+
+\header{Languages}
+\begin{achievements}
+\item Spanish - Excellent
+\item English - Good (MELICET 82)
+\item Hungarian - Intermediate
+\end{achievements}
+
+\header{Contacts} \employer {Andr\'es Sicard Ram\'irez} {Universidad EAFIT} {Head of the Logic and Computation Research Group}
+\begin{achievements}
+\item asicard@eafit.edu.co - +57 4 261-9260
+\end{achievements}
+\employer {Juan Carlos Montoya} {Universidad EAFIT} {Professor of Distributed
+  Systems}
+\begin{achievements}
+\item jcmontoy@eafit.edu.co - +57 4 261-9260
+\end{achievements}
+
+\header{Publications}
+\begin{achievements}
+\item Juan Montoya, Yezid Donoso, Ramon Fabregat, Edwin Montoya, Diego
+  Echeverri. Multiobjective Model for Multicast Overlay Networks over IP/MPLS
+  using MOEA. 12th Conference on Optical Network Design and
+  Modelling. Vilanova i la Geltr\'u, Spain. 11-12. March 2008.
+
+\item Juan Carlos Montoya, Yezid Donoso, Ramon Fabregat, Edwin Montoya, Diego 
+  Echeverri. Optimizaci\'on Multiobjetivo para Enrutamiento Multicast en
+  Overlay Networks utilizando Algoritmos Evolutivos. Ingenier\'ia y
+  Ciencia. Universidad EAFIT. Volumen 4, N\'umero 7. p.87-111, Junio 2008. ISSN
+  1794–9165.
+\end{achievements}
+
+\header{Projects}
+\begin{achievements}
+
+\item \url{http://github.com/diegoeche/}:
+  Here I keep my ``fun'' projects and Emacs files.
+
+\end{achievements}
+
+
+\end{document}
